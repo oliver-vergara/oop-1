@@ -1,12 +1,22 @@
 class Task
-  attr_reader :name, :complete
+  attr_accessor :name, :complete, :priority
 
-  def initialize(name)
+  def initialize(name, priority)
     @name = name
+    @priority = priority
     @complete = false
+
   end
 
   def complete!
     @complete = true
   end
+
+  def toggle_complete!
+    @complete = !@complete
+  end
+
+  # def set_priority(priority)
+  #   @priority = priority
+  # end
 end
