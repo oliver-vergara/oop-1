@@ -1,4 +1,4 @@
-requirerequire_relative "list"
+require_relative "list"
 require_relative "song"
 
 list = List.new
